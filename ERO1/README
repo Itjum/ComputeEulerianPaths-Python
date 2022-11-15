@@ -1,0 +1,36 @@
+Pour pouvoir executer notre projet, il faudra installer OSMNX. Pour cela, 
+
+    Verifiez votre version python:
+    python3.9 --version # or python3 --version
+
+    Ainsi que conda :
+    conda install conda
+    conda --version
+    
+    Faites les commandes suivantes:
+    conda activate ox
+
+    conda install -c conda-forge jupyterlab
+    pip install --user ipykernel
+    python -m ipykernel install --user --name=ox
+Cela est valide pour tous les systèmes d'exploitations.
+
+À la racine de notre projet nous trouvons:
+    Un fichier AUTHORS contenant noms et prénoms de tous les membres du groupe.
+    
+    Un LINKS contenant notre vidéo de présentation du projet.
+    
+    Un script python fournissant la démonstration en éxuctant les fonctions de la partie pratique.
+    Ce script prend obligatoirement des arguments. Ceux ci peuvent être "--deneigeuse nombrededeneigeuse" ou "nombrededeneigeuse --deneigeuse" ou "--drone" ou "--drone 'Uneville, LePays'.
+    L'éxécution du drone étant trés longue sur Montréal (plusieurs heures), nous vous conseillons de lancer le drone avec la ville 'Tombeboeuf, France'.
+    L'option deneigeuse éxécute la solution des deneigeuses en affichant tour à tour, une représentation de la ville de Montréal, puis 'nombrededeneigeuse' représentations
+    de la ville avec chacune le trajet d'une deneigeuse. Il faut fermer la représentation de chaque déneigeuse pour passer à la suivante.
+    Le Script écrit aussi dans le fichier "output_deneigeuse" présent dans le dossier pratique, tous les noeuds visités par les deneigeuses les uns aprés les autres, ainsi que les aretes.
+    L'option "--drone", quant à elle affiche simplement le parcours du drone dans la ville de Montréal noeud par noeud dans le fichier "output_drone" dans le dossier pratique.
+    
+    Un fichier LINKS contenant le lien URL d'une vidéo youtube de présentation du projet.
+    
+    Un dossier "pratique" contenant un fichier pratique.py qui contient toutes les fonctions nécéssaire à la démonstration de deneigement de Montréal. Nous pouvons aussi
+    trouver deux fichiers "output_deneigeuse" et "output_drone" dont le rôle est expliqué au dessus.
+    
+    Un dossier "theorique" contenant un jupyter qui test toutes nos fonctions de manipulation de graph avec des graphs eulériens simples.
